@@ -5,10 +5,10 @@ import { learningStyles } from './styles'
 
 import { words, defaultValues } from './consts'
 
-import { getSumOfColumns } from '../../utils/getSumOfColumns'
 import ModalResponse from '../../components/ModalResponse'
 import useModal from '../../hooks/useModal'
 import { createInputs } from '../../services/Posts'
+import { getSumOfColumns } from '../../utils'
 
 const baseURL =
   'https://euclidean-distance-calculation-api.vercel.app/euclidean-distance-api/learning-style/1/calculation'
