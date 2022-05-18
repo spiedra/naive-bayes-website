@@ -7,7 +7,7 @@ import { learningStyles } from './styles'
 
 import ModalResponse from '../../components/ModalResponse'
 import useModal from '../../hooks/useModal'
-import { createInputs } from '../../services/Posts'
+import { createInputs } from '../../services'
 
 const baseURL =
   'https://euclidean-distance-calculation-api.vercel.app/euclidean-distance-api/learning-style/2/calculation'

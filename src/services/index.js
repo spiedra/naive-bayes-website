@@ -3,7 +3,7 @@ import axios from 'axios'
 export const createInputs = async (baseURL, inputs) => {
   try {
     const response = await axios.post(baseURL, {
-      inputs: inputs
+      inputs
     })
     return response.data
   } catch (error) {
