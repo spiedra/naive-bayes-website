@@ -11,7 +11,7 @@ import { getSumOfColumns } from '../../utils'
 import { createInputs } from '../../services'
 
 const baseURL =
-  'https://euclidean-distance-calculation-api.vercel.app/euclidean-distance-api/learning-style/1/calculation'
+  'http://localhost:8080/naive-bayes-api/learning-style/1/calculation'
 
 const LearningStyle = () => {
   const [inputs, setInputs] = useState(defaultValues)

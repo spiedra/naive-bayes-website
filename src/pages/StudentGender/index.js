@@ -11,7 +11,7 @@ import useModal from '../../hooks/useModal'
 import { createInputs } from '../../services'
 
 const baseURL =
-  'https://euclidean-distance-calculation-api.vercel.app/euclidean-distance-api/student-genre/calculation'
+  'https://naive-bayes-api.vercel.app/naive-bayes-api/student-genre/calculation'
 
 const StudentGender = () => {
   const [result, setResult] = useState({ result: '' })
