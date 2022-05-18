@@ -1,10 +1,10 @@
-# Naive Bayes Webiste
+# Naive Bayes Website
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## About
 
-This is a university project where the Naive Bayes classifier is put into practice to measure differences and similarities between examples of people or things
+This is a university project where the Naive Bayes classifier is put into practice to measure differences and similarities between examples of people or things - Website
 
 ## Tech Stack
 
