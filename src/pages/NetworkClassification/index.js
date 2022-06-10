@@ -129,9 +129,9 @@ const NetworkClassification = () => {
                     error={!!errors.networkCapacity}
                     label="Capacidad total de la red"
                   >
-                    <MenuItem value="1">Baja</MenuItem>
-                    <MenuItem value="2">Media</MenuItem>
-                    <MenuItem value="3">Alta</MenuItem>
+                    <MenuItem value="Low">Baja</MenuItem>
+                    <MenuItem value="Medium">Media</MenuItem>
+                    <MenuItem value="High">Alta</MenuItem>
                   </TextField>
                 )}
               />
@@ -149,9 +149,9 @@ const NetworkClassification = () => {
                     error={!!errors.networkCost}
                     label="Coste de la red"
                   >
-                    <MenuItem value="1">Bajo</MenuItem>
-                    <MenuItem value="2">Medio</MenuItem>
-                    <MenuItem value="3">Alto</MenuItem>
+                    <MenuItem value="Low">Bajo</MenuItem>
+                    <MenuItem value="Medium">Medio</MenuItem>
+                    <MenuItem value="High">Alto</MenuItem>
                   </TextField>
                 )}
               />

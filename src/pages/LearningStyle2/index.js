@@ -90,8 +90,8 @@ const LearningStyle2 = () => {
                     error={!!errors.campus}
                     label="Recinto"
                   >
-                    <MenuItem value={1}>Turrialba</MenuItem>
-                    <MenuItem value={2}>Paraíso</MenuItem>
+                    <MenuItem value='Turrialba'>Turrialba</MenuItem>
+                    <MenuItem value='Paraíso'>Paraíso</MenuItem>
                   </TextField>
                 )}
               />
@@ -125,8 +125,8 @@ const LearningStyle2 = () => {
                     error={!!errors.genre}
                     label="Sexo"
                   >
-                    <MenuItem value={1}>Masculino</MenuItem>
-                    <MenuItem value={2}>Femenino</MenuItem>
+                    <MenuItem value='M'>Masculino</MenuItem>
+                    <MenuItem value='F'>Femenino</MenuItem>
                   </TextField>
                 )}
               />

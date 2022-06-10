@@ -113,9 +113,9 @@ const TeacherType = () => {
                     error={!!errors.genre}
                     label="Sexo"
                   >
-                    <MenuItem value="1">Male</MenuItem>
-                    <MenuItem value="2">Female</MenuItem>
-                    <MenuItem value="3">No indicado</MenuItem>
+                    <MenuItem value="F">Male</MenuItem>
+                    <MenuItem value="M">Female</MenuItem>
+                    <MenuItem value="NA">No indicado</MenuItem>
                   </TextField>
                 )}
               />
@@ -133,9 +133,9 @@ const TeacherType = () => {
                     error={!!errors.experience}
                     label="Experiencia impartiendo el curso"
                   >
-                    <MenuItem value="1">Principiante</MenuItem>
-                    <MenuItem value="2">Intermedio</MenuItem>
-                    <MenuItem value="3">Avanzado</MenuItem>
+                    <MenuItem value="B">Principiante</MenuItem>
+                    <MenuItem value="I">Intermedio</MenuItem>
+                    <MenuItem value="A">Avanzado</MenuItem>
                   </TextField>
                 )}
               />
@@ -173,9 +173,9 @@ const TeacherType = () => {
                     error={!!errors.backgroundDiscipline}
                     label="Disciplina o area de especialización"
                   >
-                    <MenuItem value="1">Toma de decisiones</MenuItem>
-                    <MenuItem value="2">Diseño de la red</MenuItem>
-                    <MenuItem value="3">Otras</MenuItem>
+                    <MenuItem value="DM">Toma de decisiones</MenuItem>
+                    <MenuItem value="ND">Diseño de la red</MenuItem>
+                    <MenuItem value="O">Otras</MenuItem>
                   </TextField>
                 )}
               />
@@ -193,9 +193,9 @@ const TeacherType = () => {
                     error={!!errors.computerSkills}
                     label="Habilidades en el uso de computadoras"
                   >
-                    <MenuItem value="1">Baja</MenuItem>
-                    <MenuItem value="3">Promedio</MenuItem>
-                    <MenuItem value="2">Alta</MenuItem>
+                    <MenuItem value="L">Baja</MenuItem>
+                    <MenuItem value="A">Promedio</MenuItem>
+                    <MenuItem value="H">Alta</MenuItem>
                   </TextField>
                 )}
               />
@@ -213,9 +213,9 @@ const TeacherType = () => {
                     error={!!errors.expTechnologyTeaching}
                     label="Experiencia enseñando con tecnologías web"
                   >
-                    <MenuItem value="1">Nunca</MenuItem>
-                    <MenuItem value="2">A veces</MenuItem>
-                    <MenuItem value="3">A menudo</MenuItem>
+                    <MenuItem value="N">Nunca</MenuItem>
+                    <MenuItem value="S">A veces</MenuItem>
+                    <MenuItem value="O">A menudo</MenuItem>
                   </TextField>
                 )}
               />
@@ -233,9 +233,9 @@ const TeacherType = () => {
                     error={!!errors.expWebsiteUse}
                     label="Experiencia en el uso de sitios web"
                   >
-                    <MenuItem value="1">Nunca</MenuItem>
-                    <MenuItem value="2">A veces</MenuItem>
-                    <MenuItem value="3">A menudo</MenuItem>
+                    <MenuItem value="N">Nunca</MenuItem>
+                    <MenuItem value="S">A veces</MenuItem>
+                    <MenuItem value="O">A menudo</MenuItem>
                   </TextField>
                 )}
               />

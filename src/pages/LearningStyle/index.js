@@ -7,11 +7,11 @@ import { words, defaultValues } from './consts'
 
 import ModalResponse from '../../components/ModalResponse'
 import useModal from '../../hooks/useModal'
-import { getSumOfColumns } from '../../utils'
+import { getSumOfColumns, validateInputs } from '../../utils'
 import { createInputs } from '../../services'
 
 const baseURL =
-  'http://localhost:8080/naive-bayes-api/learning-style/1/calculation'
+  'https://naive-bayes-api.vercel.app/naive-bayes-api/learning-style/1/calculation'
 
 const LearningStyle = () => {
   const [inputs, setInputs] = useState(defaultValues)
@@ -30,10 +30,16 @@ const LearningStyle = () => {
   const handleSubmit = (event) => {
     event.preventDefault()
 
-    createInputs(baseURL, getSumOfColumns(inputs)).then((response) => {
-      setResult(response)
+    if (validateInputs(inputs)) {
+      createInputs(baseURL, getSumOfColumns(inputs)).then((response) => {
+        setResult(`Su tipo de aprendizaje es: ${response.result}`
+        )
+        setOpen()
+      })
+    } else {
+      setResult('No se permiten espacios vacios')
       setOpen()
-    })
+    }
   }
 
   return (
@@ -95,13 +101,17 @@ const LearningStyle = () => {
             {words.map((item) => (
               <Grid item key={item.value}>
                 <TextField
+                  required
                   sx={learningStyles.select}
                   name={item.value}
                   select
                   label={item.label}
                   value={inputs[item.value]}
                   onChange={handleChange}
+                  error={inputs[item.value] === 0}
+                  helperText={inputs[item.value] === 0 ? 'Vacio!' : ' '}
                 >
+                  <MenuItem value={0}>Seleccionar</MenuItem>
                   <MenuItem value={1}>1</MenuItem>
                   <MenuItem value={2}>2</MenuItem>
                   <MenuItem value={3}>3</MenuItem>
@@ -127,7 +137,7 @@ const LearningStyle = () => {
         handleOpen={setOpen}
         handleClose={setClose}
         title="Estilo de aprendizaje"
-        description={`Su tipo de aprendizaje es: ${result.result}`}
+        description={String(result)}
       />
     </>
   )

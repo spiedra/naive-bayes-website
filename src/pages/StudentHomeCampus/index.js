@@ -86,10 +86,10 @@ const StudentHomeCampus = () => {
                     error={!!errors.learningStyle}
                     label="Estilo de aprendizaje"
                   >
-                    <MenuItem value={1}>Asimilador</MenuItem>
-                    <MenuItem value={2}>Acomodador</MenuItem>
-                    <MenuItem value={3}>Divergente</MenuItem>
-                    <MenuItem value={4}>Convergente</MenuItem>
+                    <MenuItem value='ASIMILADOR'>Asimilador</MenuItem>
+                    <MenuItem value='ACOMODADOR'>Acomodador</MenuItem>
+                    <MenuItem value='DIVERGENTE'>Divergente</MenuItem>
+                    <MenuItem value='CONVERGENTE'>Convergente</MenuItem>
                   </TextField>
                 )}
               />
@@ -123,8 +123,8 @@ const StudentHomeCampus = () => {
                     error={!!errors.genre}
                     label="Sexo"
                   >
-                    <MenuItem value={1}>Masculino</MenuItem>
-                    <MenuItem value={2}>Femenino</MenuItem>
+                    <MenuItem value='M'>Masculino</MenuItem>
+                    <MenuItem value='F'>Femenino</MenuItem>
                   </TextField>
                 )}
               />

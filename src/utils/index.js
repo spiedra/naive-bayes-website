@@ -31,5 +31,14 @@ export const getSumOfColumns = (inputs) => {
     inputs.Aprendo_mas_de_la_experimentacion +
     inputs.Abierto
 
-  return { CA: ca, EC: ec, EA: ea, OR: or }
+  return { CA: String(ca), EC: String(ec), EA: String(ea), OR: String(or) }
+}
+
+export const validateInputs = (inputs) => {
+  for (const key in inputs) {
+    if (inputs[key] === 0) {
+      return false
+    }
+  }
+  return true
 }
